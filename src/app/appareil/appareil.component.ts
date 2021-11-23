@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./appareil.component.scss']
 })
 export class AppareilComponent implements OnInit {
-
+  appareilName: string = 'Machine à laver';
+  appareilStatus: string = 'éteint';
   constructor() { }
 
   ngOnInit(): void {
   }
+  
 
 }
