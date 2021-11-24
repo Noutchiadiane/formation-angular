@@ -20,4 +20,16 @@ export class AppareilService {
   ];
 
   constructor() {}
+
+  switchOnAll() {
+    for (let appareil of this.appareils) {
+      appareil.status = 'allumé';
+    }
+  }
+
+  switchOffAll() {
+    for (let appareil of this.appareils) {
+      appareil.status = 'éteint';
+    }
+  }
 }

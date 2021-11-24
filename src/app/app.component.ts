@@ -21,6 +21,11 @@ export class AppComponent implements OnInit {
     this.appareils = this.AppareilService.appareils;
   }
   onAllumer() {
-    console.log('On allume tout !');
+    this.AppareilService.switchOnAll();
+  }
+  onEteindre() {
+    if (confirm('Etes-vous sûr de vouloir éteindre tous vos appareils ?')) {
+      this.AppareilService.switchOffAll();
+    }
   }
 }
