@@ -7,25 +7,5 @@ import { AppareilService } from './services/appareil.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  isAuth = false;
-  lastUpdate: Promise<Date> = null!;
-
-  appareils: any[] = [];
-
-  constructor(private AppareilService: AppareilService) {
-    setTimeout(() => {
-      this.isAuth = true;
-    }, 4000);
-  }
-  ngOnInit() {
-    this.appareils = this.AppareilService.appareils;
-  }
-  onAllumer() {
-    this.AppareilService.switchOnAll();
-  }
-  onEteindre() {
-    if (confirm('Etes-vous sûr de vouloir éteindre tous vos appareils ?')) {
-      this.AppareilService.switchOffAll();
-    }
-  }
+  ngOnInit() {}
 }
