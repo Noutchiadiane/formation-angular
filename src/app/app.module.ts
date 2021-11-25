@@ -8,6 +8,7 @@ import { AppareilComponent } from './appareil/appareil.component';
 import { FormsModule } from '@angular/forms';
 import { AuthComponent } from './auth/auth.component';
 import { AppareilViewComponent } from './appareil-view/appareil-view.component';
+import { SingleAppareilComponent } from './single-appareil/single-appareil.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { AppareilViewComponent } from './appareil-view/appareil-view.component';
     AppareilComponent,
     AuthComponent,
     AppareilViewComponent,
+    SingleAppareilComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
