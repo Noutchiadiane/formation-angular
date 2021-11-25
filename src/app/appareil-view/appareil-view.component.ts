@@ -35,4 +35,10 @@ export class AppareilViewComponent implements OnInit {
       this.AppareilService.switchOffAll();
     }
   }
+  onSave() {
+    this.AppareilService.saveAppareilsToServer();
+  }
+  onFetch() {
+    this.AppareilService.getAppareilsFromServer();
+  }
 }
