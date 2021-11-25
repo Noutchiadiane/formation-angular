@@ -15,6 +15,7 @@ import { AppareilService } from './services/appareil.service';
 import { AuthService } from './services/auth.service';
 import { UserService } from './services/user.service';
 import { UserListComponent } from './user-list/user-list.component';
+import { NewUserComponent } from './new-user/new-user.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { UserListComponent } from './user-list/user-list.component';
     FourOhFourComponent,
     EditAppareilComponent,
     UserListComponent,
+    NewUserComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [AppareilService, AuthService, UserService],
