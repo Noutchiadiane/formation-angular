@@ -1,10 +1,12 @@
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AppareilService {
-  appareils = [
+  appareilsSubject = new Subject<any[]>();
+  private appareils = [
     {
       id: 1,
       name: 'Machine à laver',
@@ -23,6 +25,10 @@ export class AppareilService {
   ];
 
   constructor() {}
+  emitAppareilSubject() {
+    this.appareilsSubject.next(this.appareils.slice());
+  }
+
   switchOnOne(i: number) {
     this.appareils[i].status = 'allumé';
   }
