@@ -8,8 +8,8 @@ import { NgForm } from '@angular/forms';
 })
 export class EditAppareilComponent implements OnInit {
   appareilForm = {
-   name:'',
-   status:''
+    name: '',
+    status: 'éteint',
   };
   constructor() {}
 
